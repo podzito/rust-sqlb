@@ -42,6 +42,9 @@ pub trait HasFields {
 
 	/// Return the array of all field names this struct has.
 	fn field_names() -> &'static [&'static str];
+
+	/// Return the array of all field names this struct has.
+	fn field_names_prefixed(prefix: &str) -> Vec<String>;
 }
 
 // region:    Common Types
